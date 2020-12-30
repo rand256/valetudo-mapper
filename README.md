@@ -61,6 +61,8 @@ To override the configuration inside the docker container, map it to `/app/confi
 
 Most options are self-explanatory. Autocrop allows to get rid of empty spaces at the edges of the image, its value determines how much pixels to keep at the border. Specifying manual crop values you can cut out mirrored artifacts outside of the actual rooms on the map.
 
+You can also run a multiple instances of a single valetudo mapper with different configuration files. For this start the instance with `./node app.js -f /path/to/config.json`. You may also need to add the `-c` key to generate a new custom config file if it doesn't exist.
+
 ### Map PNG example in HA
 
 ![map](https://user-images.githubusercontent.com/30267719/67422498-45d8f480-f5db-11e9-8f23-b1472cfb0962.png)
